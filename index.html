@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>
+      Avaliação de Resultados
+    </title>
+	
+	<style>
+	
+	p{
+	  text-align : center;
+		}
+	h1{
+	  text-align : center;
+		}
+	</style>
+	
+  </head>  
+  <body> 
+    <form method='POST' action='saida.php'>     
+      <h1>AVALIAÇÃO DE RESULTADOS</h1>
+	  <p>Nome do aluno: 
+	  <input type='text' name='nomeAluno'></p>
+      <p>Nome da disciplina: 
+	  <input type='text'name='nomeDisciplina'></p>
+      <p>Nome do curso: 
+	  <input type='text'name='nomeCurso'></p>
+      <p><em>Link</em> para a logomarca da faculdade: 
+	  <input type='text'name='linkImagem' value='logo.jpg'></p>
+      <p>Nota da VA1 (0-15): 
+	  <input type='number'name='notaProva1'step='any' min='0'max='15'></p>
+      <p>Nota da VA2 (0-25): 
+	  <input type='number'name='notaProva2'step='any'min='0' max='25'></p>
+      <p>Nota da VA3 (0-35): 
+	  <input type='number'name='notaProva3' step='any' min='0' max='35'></p>
+      <p>Nota dos trabalhos (0-25):
+	  <input type='text' name='notaTrabalhos'></p>
+      <p>Nome do(a) professor(a): 
+	  <input type='text'name='nomeProfessor'></p>
+      <p>Nome do(a) coordenador(a):
+	  <input type='text'name='nomeCoordenador'></p>
+      <p><input type='submit' value='Gerar declaração'> </p>     
+   </form>
+  </body>
+</html>
